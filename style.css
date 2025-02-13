@@ -40,10 +40,11 @@
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    row-gap: 50px;
 }
 .banner-img{
     width: 100%;
+    left: 50%;
+    transform: translateX(50%);
 }
 
 .banner-title h2{
@@ -63,14 +64,29 @@
     font-weight: bold;
     font-size:20px ;
 }
+.box{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(255, 255, 255, 0.01);
+    border-width: 100%;
+    margin-left: 900px;
+    margin-right: 900px;
+    margin-bottom: -70px;
+    padding: 60px;
+    background-color: white;
+
+}
 .school-section{
     background-image: url('assets/bg.png');
     width: 100%;
+    background-color: rgb(246, 243, 243);
 }
 .school-section2{
     background-image: url('assets/bg.png');
     width: 100%;
     background: linear-gradient(to top, #ff01af1a, #F7FBFF);  
+    margin-top: -80px;
 }
 .standard-title{
     text-align: center;
