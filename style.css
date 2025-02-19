@@ -1,277 +1,313 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
 .quicksand-normal {
     font-family: "Quicksand", serif;
     font-optical-sizing: auto;
     font-weight: <weight>;
     font-style: normal;
-    
-  }
-  
 
-.nav{
-   margin-left: 200px;
-   margin-right: 200px;
+}
+
+main {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+main>section {
+    margin-top: 100px;
+}
+
+
+.nav {
+    margin: 100px;
+    padding: 50px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-}
-.logo{
-    display: flex;
-    align-items: center;
-}
-.navlink{
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-}
-.nav a{
-    text-decoration: none;
-}
-.nav button{
-    background-color: orange;
-    border: 1px orange;
-    border-radius: 12px;
-    color: white;
-    width: 197px;
-    height: 50px;
-    padding: 10px;
-}
-.banner{
-    margin-left: 200px;
-    margin-right: 200px;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-}
-.banner-img{
-    width: 100%;
-    left: 50%;
-    transform: translateX(50%);
+    font-size: 50px;
 }
 
-.banner-title h2{
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo p {
+    font-weight: bold;
+    font-size: 32px;
+}
+
+.navlink {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.nav a {
+    text-decoration: none;
+    font-weight: medium;
+    font-size: 20px;
+}
+
+.nav button {
+    width: 197px;
+    height: 50px;
+    background-color: orange;
+    color: white;
+    border: 1px solid;
+    border-radius: 12px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.banner {
+    display: flex;
+    align-items: center;
+    gap: 200px;
+    padding: 0px 100px;
+}
+
+.banner-img {
+    width: 100%;
+}
+
+.banner-title h2 {
     font-weight: bold;
     font-size: 56px;
 }
-.banner-title p{
+
+.banner-title p {
     font-weight: light;
     font-size: 20px;
 }
-.banner button,.btn3{
+
+.banner-title button {
+    margin: 20px 0px;
+}
+
+.banner button,
+.btn3 {
     width: 197px;
     height: 50px;
     background-color: black;
     color: white;
     border-radius: 12px;
     font-weight: bold;
-    font-size:20px ;
+    font-size: 20px;
 }
-.box{
-    display: grid;
-    align-items: center;
-    justify-content: center;
-    border: 1px solid rgba(255, 255, 255, 0.01);
-    border-width: 100%;
-    margin-left: 900px;
-    margin-right: 900px;
-    margin-bottom: -70px;
-    padding: 60px;
-    background-color: white;
 
+.box {
+    background-color: white;
+    height: 100px;
+    width: 100px;
 }
-.school-section{
+
+.box-container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.school-section {
     background-image: url('assets/bg.png');
     width: 100%;
     background-color: rgb(246, 243, 243);
+    padding: 50px 0px;
 }
-.school-section2{
+
+.school-section2 {
     background-image: url('assets/bg.png');
-    width: 100%;
-    background: linear-gradient(to top, #ff01af1a, #F7FBFF);  
-    margin-top: -80px;
+    background: linear-gradient(#F7FBFF, rgb(241, 230, 134));
+    padding: 50px 0px:
 }
-.standard-title{
+
+.standard-title {
     text-align: center;
     font-weight: bold;
     font-size: 46px;
 }
-.standard{
-    margin: 200px;
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    row-gap: 28px;
-    align-items: center;
+
+.standard {
+    margin: 30px 0px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
 }
-.school1, .school2, .school3{
+
+.school {
     width: 365px;
-    height: 475px;
+    padding: 10px;
     border-radius: 18px;
     text-align: center;
     box-shadow: #01ACFD;
 }
 
-.btn{
+#school1 {
+    background: linear-gradient(rgb(222, 245, 255), white);
+}
+
+#school2 {
+    background: linear-gradient(rgb(255, 244, 220), white);
+}
+
+#school3 {
+    background: linear-gradient(rgb(238, 225, 255), white);
+}
+
+.btn {
     border: none;
     background-color: white;
 }
-.card-title{
+
+.card-title {
     font-weight: bold;
     font-size: 24px;
 }
-.card-description{
+
+.card-description {
     font-weight: medium;
     font-size: 15px;
     color: grey;
 }
-.school-img{
+
+.school-img {
     margin-top: 70px;
 }
-.school1, .school2, .school3
-{
-    padding: 20px;
-    font-weight: lighter;
-    font-size: 15px;
-    width: 100%;
-}
-.school1{
-
-    background: linear-gradient(to bottom,  #E3F3FF,#F7FBFF); 
-    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.08); 
-    border-radius: 16px;
-    text-align: center;
-    padding: 40px 20px 20px;
-    width: 365px;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-.school2{
-    
-    background: linear-gradient(to bottom,  #fff4dc,#F7FBFF); 
-    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.08); 
-    border-radius: 16px;
-    text-align: center;
-    padding: 40px 20px 20px;
-    width: 365px;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.school3{
-    background-color: #f2e8ff;
-    background: linear-gradient(to bottom,  #f2e8ff,#F7FBFF); 
-    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.08); 
-    border-radius: 16px;
-    text-align: center;
-    padding: 40px 20px 20px;
-    width: 365px;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
 
 
-.stories, .stories2{
-    margin-top: 40px;
+.stories,
+.stories2 {
     text-align: center;
     font-weight: bold;
     font-size: 46px;
 }
-.stories2{
+
+.stories2 {
     margin-top: -250px;
-    padding: 20px;
 }
-.container{
+
+.container {
     display: flex;
     border-radius: 16px;
     gap: 40px;
-   
     margin-top: 70px;
     margin-bottom: 350px;
     align-items: center;
     justify-content: center;
     width: 100%;
 }
-.side-container{
+
+.side-container {
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 20px;
 }
 
-.im1{
-    border-top-left-radius: 20px; 
+.im1 {
+    display: block;
+    width: 100%;
+    border-top-left-radius: 20px;
     border-top-right-radius: 20px;
-    border-bottom-left-radius: 0; 
+    border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
 }
-.card1{
+
+.card1 {
     display: grid;
     width: 540px;
     height: 630px;
     background-color: white;
     border: 1px solid white;
-    border-radius: 20px; 
+    border-radius: 20px;
     text-align: left;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
 }
-.card2{
+
+.content {
+    padding: 20px;
+
+}
+
+.card2 {
     display: grid;
     width: 290px;
     height: 307px;
     background-color: white;
     border: 1px solid white;
     border-radius: 16px;
-    text-align: left;   
-    box-shadow: 0 2px 4px rgba(0,0,0,0,1); 
+    text-align: left;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0, 1);
+    position: relative;
+    overflow: hidden;
 }
-.content{
-    padding: 20px;
-    margin-top: -160px;
+
+#card2,
+#card3 {
+    display: grid;
 }
-.content p{
+
+
+.content p {
     font-weight: lighter;
     font-size: 15px;
 }
-.content2, .content3{
-    padding: 20px;
-    margin-top: -80px;
-}
 
-.content2 p, .content3 p{
-    font-weight: bold;
-    font-size: 15px;
-}
-
-
-.content button, .content2 button, .content3 button{
-    width: 175px;
-    height: 45px;
+.content1-text {
     background-color: skyblue;
     color: white;
-    border-radius: 45px;
-    border-color: skyblue;
+    width: 150px;
+    padding: 10px 40px;
+    border-radius: 15px;
+    margin-top: -130px;
+    position: absolute;
 }
-.content2 button{
+
+.content2-text,
+.content3-text {
     background-color: green;
+    color: white;
+    width: 150px;
+    padding: 10px 40px;
+    border-radius: 15px;
+    margin-top: -70px;
+    position: absolute;
 }
-.content3 button{
+
+.content3-text {
     background-color: blue;
-    margin-top: 10px;
 }
-.card1 img,.card2 img{
-    width: 100%;
+
+.card1-in {
+    padding: 0px 13px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-items: left;
 }
+
+.card2-in {
+    padding: 0px 13px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-items: left;
 }
-.btn3{
-    gap: 50px;
+
+
+
+
+.btn3 {
+    margin: 20px 0px;
+
 }
-.footer{   
-    padding: 100px ;
+
+.footer {
+    margin: 20px 0px;
+    padding: 100px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -279,83 +315,102 @@
     gap: 250px;
     color: white;
 }
-.section1{
+
+.section1 {
     display: grid;
     align-items: center;
 }
-.section1-logo{
+
+.section1-logo {
     display: flex;
     align-items: center;
 }
-.section1-logo img{
+
+.section1-logo img {
     width: 82px;
 }
-.section1-logo p{
+
+.section1-logo p {
     font-weight: bold;
     font-size: 40px;
 }
-.section1-description{
+
+.section1-description {
     font-weight: lighter;
     font-size: 20px;
 }
+
 .section2-link a {
+    margin: 10px 0px;
     text-decoration: none;
     display: grid;
-    grid-template-rows: repeat(1,3fr);
+    grid-template-rows: repeat(1, 1fr);
     color: white;
-    row-gap: 40px;
+    gap: 40px;
     font-weight: normal;
     font-size: 20px;
 }
-.section2 p{
+
+.section2 p {
     font-weight: bold;
     font-size: 24px;
 }
-.section3 p{
-    margin-top: -40px;
+
+.section3 {
+    margin-top: -80px;
+}
+
+.section3 p {
     font-weight: bold;
     font-size: 20px;
 }
 
-.menu-icon {
-    display: none; 
+.section3-img {
+    margin: 20px 0px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
 }
 
-@media screen and (max-width: 576px) {
-    .nav{
-        margin: 30px;
-        display: flex;
-        align-items: center;
-        justify-items: center;
-        border-bottom: 1px solid orange;
-        border-width: 100%;
-    }
-    .menu-icon{
-        margin-top: 40px;
-    }
-    
-    .nav p{
-        display: none;
 
-    }
-    .banner{
-        margin: 20px;
+
+
+@media screen and (max-width: 576px) {
+
+    .nav {
         display: flex;
+        margin: 0px 40px;
+        justify-content: space-between;
+    }
+
+    .menu-icon {
+        margin-right: -10em;
+        display: flex;
+        align-items: center;
+        justify-items: space-around;
+        height: 70px;
+        font-size: 30px;
+    }
+
+
+    .navlink,
+    .nav button,
+    .nav p {
+        display: none;
+    }
+
+
+    .banner {
+        flex-wrap: wrap;
+        gap: 50px;
         flex-direction: column-reverse;
-        align-items: center;
-        position: relative;
     }
+
     .banner-title {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        margin-top: -40px;
-        padding: 50px;
+        text-align: center;
     }
-    .banner-img{
-        order: -1;
-    }
+
+
     .standard {
         width: 100%;
         margin: auto;
@@ -365,33 +420,12 @@
         justify-content: center;
         gap: 10px;
     }
-    .school1, .school2, .school3{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        width: 357px;
-    }
-    .school-img{
-        
-        margin-top:-10px;
-    }
-   .side-container{
-    display: grid;
-    align-items: center;
-    justify-content: center;
-    margin-left: 200px;
-    margin-top: -120px;
-    padding: 100px;
-   }
-   .stories2 button{
-    margin-top: 50px;
-   }
-    .menu-icon {
-        display: none; 
-        padding: 20px;
-        height: 70px;
-        font-size: 30px;
+
+
+
+    .school-img {
+
+        margin-top: -10px;
     }
 
     .container {
@@ -400,100 +434,113 @@
         margin-left: 0;
         margin-bottom: 200px;
     }
-  
-     .card1 {
-        display: none; 
-     }
-    
+
+    .card1 {
+        display: none;
+    }
+
 
     .card2 {
         width: 100%;
         height: auto;
     }
 
-    .school1, .school2, .school3 {
+    .card2-in p {
+        margin: 50px 0px;
+    }
+
+    .card2,
+    #card2,
+    #card3 {
+        position: relative;
+    }
+
+    .content2-text,
+    .content3-text {
+        position: relative;
+        overflow: hidden;
+        width: 130px;
+        bottom: -40px;
+
+    }
+
+
+    ..school-section,
+    .school-section2 {
         width: 100%;
-        height: auto;
     }
-    ..school-section, .school-section2{
-        width: 100%;
+
+    .school-section2 {
+        padding: 0px 0px;
     }
-    .side-container{
-        width: 100%;
+
+    .side-container {
+        margin: 0px 20px;
     }
-    .footer{
-       padding: 40px;
-       display: flex;
-       flex-direction: column;
-       align-items: flex-start;
-       text-align: left;
-       gap: 10px;
-       width: 100%;
+
+    .stories2 button {
+        margin: 90px 0px 50px;
     }
-    .section1-logo{
+
+    .footer {
+        padding: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: left;
+        gap: 50px;
+    }
+
+    .section1-logo {
         display: flex;
         text-align: left;
     }
-    .section1{
-       display: flex;
-       flex-direction: column;
-       align-items: baseline ;
-       justify-content: flex-start;
+
+    .section1 {
+        display: flex;
+        flex-direction: column;
+        align-items: baseline;
+        justify-content: flex-start;
     }
-    .section1-description{
+
+    .section1-description {
         text-align: left;
     }
-    .section2-link{
+
+    .section2-link {
         text-align: left;
     }
-    .section2-link a{
+
+    .section2-link a {
         row-gap: 10px;
     }
-    .section3 p{
-        text-align: left;
+
+    .section3 {
         margin-top: 20px;
+    }
+
+
+    .box {
+        display: none;
     }
 }
 
 @media screen and (min-width:577px) and (max-width:1440px) {
-    .nav{
-        margin: 10px;
-        align-items: center;
-        justify-content: space-between;
 
-    }
-    
     .menu-icon {
-        display: hidden; 
+        display: none;
     }
 
-   
-    .banner-title{
+
+    .banner-title {
         margin-top: 50px;
     }
 
-    .school-section, .school-section2 {
-        
-        width: 100%;
-    }
 
 
-    .standard {
-        margin-left: 0;
-        grid-template-columns: repeat(1, 1fr);
+    #card2,
+    #card3 {
+        display: none;
     }
 
-    .school1, .school2, .school3 {
-        width: 90%;
-        margin: auto;
-    }
-
-    .container {
-        align-items: center;
-        justify-content: center;
-        margin-bottom: 100px;
-        width: 100%;
-    }
-   
 }
-
